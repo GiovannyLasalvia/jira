@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header-bar {
+    background-color: #0079bf;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-content: center; 
+    margin-bottom: 20px;
+    column-gap: 15px;
+}
+.input-container {
+    margin-right: 20px;
+    flex: 1;
+    
+}
+
+input#sinHacerInput {
+    background-color: darkturquoise;
+    color: black;
+
+}
+input#finalizadasInput {
+background-color: limegreen;
+color: black;
+}
+input#enProgresoInput {
+background-color: red;
+color: black;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.button-container {
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+.button-container button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0079bf;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.column-container {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    flex: 1;
+    margin-right: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.column:last-child {
+    margin-right: 0;
+}
+
+div#sinHacerColumn {
+    border: 3px solid darkturquoise;
+}
+div#enProgresoColumn {
+border: 3px solid red;
+}
+
+div#finalizadasColumn {
+border: 3px solid limegreen;
+}
+  

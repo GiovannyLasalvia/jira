@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Jira</title>      
+    </head>
+    <body>
+        <div class="header-bar">
+            <h1>Jira</h1>
+        </div>
+        <div class="container">
+            <div class="header">
+                <div class="input-container">
+                    <input type="text" class="input" placeholder="tarea" id="tarea">
+                </div>
+                <div class="button-container">
+                    <button id="agregar">Agregar</button>
+                </div>
+            </div>
+            <div class="header">
+                <div class="input-container">
+                    <input type="text" class="input" placeholder="Sin Hacer" id="sinHacerInput" disabled>
+                </div>
+                <div class="input-container">
+                    <input type="text" class="input" placeholder="En Progreso" id="enProgresoInput" disabled>
+                </div>
+                <div class="input-container">
+                    <input type="text" class="input" placeholder="Finalizadas" id="finalizadasInput" disabled>
+                </div>
+            </div>
+            <div class="column-container">
+                <div class="column" id="sinHacerColumn" ondrop="drop(event, 'sinHacerColumn')"
+                    ondragover="allowDrop(event)">
+                    <h3>Pendientes</h3>
+                </div>
+                <div class="column" id="enProgresoColumn" ondrop="drop(event, 'enProgresoColumn')"
+                    ondragover="allowDrop(event)">
+                    <h3>En Progreso</h3>
+                </div>
+                <div class="column" id="finalizadasColumn" ondrop="drop(event, 'finalizadasColumn')"
+                    ondragover="allowDrop(event)">
+                    <h3>Finalizada</h3>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/scrip.js"></script>
+    </body>
+
+</html>
